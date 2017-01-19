@@ -10,7 +10,8 @@ player.style.top = player_pos + 'px';//coloca o personagem na posicao inicial
 no_chao = true;//para saber se o personagem está pulando ou no solo
 
 document.addEventListener("keydown", pula);
-//document.addEventListener("keydown", comeca_jogo);
+document.addEventListener("keyup", desce);
+document.addEventListener("keydown", comeca_jogo);
 
 function pula(tecla){
 	if(tecla.keyCode == 32 && no_chao ){//só pulará se estiver no chão ( e apertado espaço )
@@ -35,7 +36,18 @@ function desce(){
 		no_chao = true;	
 	}
 	else{
-		player_pos+=20;
+		player_pos+=25;
 		player.style.top = player_pos + 'px';
 	}
+}
+
+function comeca_jogo(){
+	cria_blocos();
+}
+
+function cria_blocos(){
+	novo_bloco = document.createElement("div");
+	novo_bloco.className = 'oprimido';
+	document.getElementById("background").appendChild(novo_bloco);
+	console.log(novo_bloco);
 }
