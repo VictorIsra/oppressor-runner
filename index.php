@@ -3,17 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Opressor runner</title>
+	<title>Oppressor runner</title>
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
-<h1 class="texto">Opressor Runner
+<h1 class="texto">Oppressor Runner
 	<h3 class="texto">Será que você aguenta ficar 1 minuto sem oprimir alguém?</h3>
 </h1>
 <div id="background">
 	<div id="player"></div>	
 	<div id="placar">0</div>
-	<!--<div id="mostra_mensagem">Fim de jogo!<br>aperte 'ESC' para tentar novamente.</div>-->
 	<script src="js/game.js"></script> 
 
 </div>	
